@@ -1,0 +1,15 @@
+version: '2'
+services:
+  proxy:
+    image: pbusch/webpage-proxy:jugh-0.1
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+  assets:
+    image: pbusch/webpage-assets:jugh-0.1
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+
