@@ -1,0 +1,13 @@
+.catalog:
+    name: "JUGH Demo"
+    version: "0.3"
+
+version: '2'
+services:
+  proxy:
+    scale: 1
+    start_on_create: true
+  assets:
+    scale: 1
+    start_on_create: true
+
